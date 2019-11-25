@@ -1,5 +1,5 @@
 import React from 'react';
-import {uHeader} from './styles';
+import {uFooter} from './styles';
 function Appfooter() {
   return (
     <div className={uFooter}>
