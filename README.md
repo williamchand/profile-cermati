@@ -1,5 +1,6 @@
+yarn [![Netlify Status](https://api.netlify.com/api/v1/badges/5aea2b1d-b92c-4c7c-b4b5-01b80f94cbca/deploy-status)](https://app.netlify.com/sites/relaxed-heisenberg-d6823a/deploys)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-Access the Website at [Airy Recipe](https://recipe-airy.herokuapp.com/).
+Access the Website at [Cermati Profile](https://relaxed-heisenberg-d6823a.netlify.com/).
 ## Available Scripts
 
 In the project directory, you can run:

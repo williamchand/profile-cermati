@@ -1,12 +1,14 @@
 import React from 'react';
 import Appheader from './header';
 import Appcontent from './content';
-import '../utils/styles'
+import Appfooter from './footer';
+
 function App() {
   return (
     <div className="App">
       <Appheader />
       <Appcontent />
+      <Appfooter />
     </div>
   );
 }
