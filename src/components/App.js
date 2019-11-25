@@ -1,13 +1,16 @@
 import React from 'react';
-import Appheader from './header';
+import Appnotification from './notification';
+import Appnewsletter from './newsletter';
 import Appcontent from './content';
 import Appfooter from './footer';
+import '../utils/global';
 
 function App() {
   return (
     <div className="App">
-      <Appheader />
+      <Appnotification />
       <Appcontent />
+      <Appnewsletter />
       <Appfooter />
     </div>
   );

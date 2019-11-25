@@ -1,7 +1,6 @@
 import {css} from 'emotion/macro';
 
 export const uCard = css`
-  position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
