@@ -5,6 +5,6 @@ export const uFooter = css`
   ${uColorSmokeGrey}
   font-size: 14px;
   text-align: center;
-  padding: 20px 0px;
+  padding: 30px 0px;
   background-color: #040321;
 `;

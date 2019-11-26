@@ -17,7 +17,7 @@ export const uColorDarkOrange = css`
 `;
 
 export const uColorSmokeGrey = css`
-  color: #e5e5e5;    
+  color: #e5e5e5;
 `;
 
 export const uBgBlue = css`

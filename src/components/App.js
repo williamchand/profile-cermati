@@ -4,10 +4,11 @@ import Appnewsletter from './newsletter';
 import Appcontent from './content';
 import Appfooter from './footer';
 import '../utils/global';
+import { uApp } from './styles';
 
 function App() {
   return (
-    <div className="App">
+    <div className={uApp}>
       <Appnotification />
       <Appcontent />
       <Appnewsletter />

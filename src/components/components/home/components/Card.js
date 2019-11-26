@@ -1,15 +1,18 @@
 import React from 'react';
-import { uCard, uCardImgTop, uCardRating, uCardRatingBlock, uCardBody, uCardTitle, uCardCreator, uCardText, uHide } from './styles';
+import { uCard, uCardBody, uCardTitle, uCardTitleLeft, uCardTitleRight, uCardText } from './styles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Card(props) {
-  const {image, title, rating, description, creator} = props;
+  const {image, title, description} = props;
   return (
     <div className={uCard}>
-      <img className={uCardImgTop} src={image} alt="" />
-      <div className={rating > 4 ? uCardRating : uHide}><div className={uCardRatingBlock}>{rating.toFixed(1)}</div></div>
       <div className={uCardBody}>
-        <div className={uCardTitle}><b>{title}</b></div>
-        <div className={uCardCreator}>By: {creator}</div>
+        <div className={uCardTitle}>
+          <div className={uCardTitleLeft}><b>{title}</b></div>
+          <div className={uCardTitleRight}>
+            <FontAwesomeIcon icon={image} />
+          </div>
+        </div>
         <div className={uCardText}>{description}</div>
       </div>
     </div>
