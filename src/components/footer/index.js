@@ -3,7 +3,7 @@ import {uFooter} from './styles';
 function Appfooter() {
   return (
     <div className={uFooter}>
-      Recipe
+      © 2019 William Chandra. All rights reserved.​
     </div>
   );
 }

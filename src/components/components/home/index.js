@@ -1,12 +1,12 @@
 import React from 'react';
-import Recipe from './components/Recipe';
+import Hero from './components/Hero';
 import {uHomeBody} from './styles';
 
 function HomePage() {
   
   return (
     <div className={uHomeBody}>
-      <Recipe/>
+      <Hero/>
     </div>
   );
 }

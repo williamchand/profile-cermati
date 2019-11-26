@@ -1,4 +1,62 @@
 import {css} from 'emotion/macro';
+import workDeskImage from '../../../../assets/work-desk__dustin-lee.jpg';
+import { uCenter, uBgDarkBlue, uColorBlue } from '../../../../utils/styles';
+
+export const uHero = css`
+  background: url('${workDeskImage}') no-repeat center center;
+  background-size: cover;
+`;
+
+export const uHeroSecond = css`
+  ${uBgDarkBlue}
+  height: 560px;
+  z-index: 10;
+  opacity 0.8;
+`;
+
+export const uHeroParagraph = css`
+  ${uCenter}
+  height: 355px;
+  padding-top: 100px;
+`;
+
+export const uHeroParagraphOne = css`
+  color: white;
+  font-size: 28px;
+  margin: 10px;
+`;
+
+export const uHeroParagraphTwo = css`
+  margin: 10px;
+  color: white;
+  font-size: 24px;
+`;
+
+export const uHeroParagraphThree = css`
+  margin: 10px;
+  color: white;
+  font-size: 16px;
+`;
+
+export const uHeroButton = css`
+  color: white;
+  margin: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 18px;
+  &:hover{
+    background-color: white;
+    ${uColorBlue}
+  }
+`;
+
+export const uLogo = css`
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+`;
 
 export const uCard = css`
   display: -ms-flexbox;

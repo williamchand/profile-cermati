@@ -1,10 +1,11 @@
 import {css} from 'emotion/macro';
-import { uBgBlue } from '../../utils/styles';
+import { uBgBlue, uBgSmokeGrey } from '../../utils/styles';
 import { uRow, uColmd2 } from '../../utils/grid';
 
 export const uNotification = css`
-  background-color: white;
+  ${uBgSmokeGrey}
   position: sticky;
+  z-index: 1;
   overflow-y: hidden;
   transition-property: all;
   transition-duration: .5s;
