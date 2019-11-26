@@ -1,10 +1,14 @@
 import {css} from 'emotion/macro';
 import { uBgBlue } from '../../utils/styles';
 import { uRow, uColmd2 } from '../../utils/grid';
+
 export const uNotification = css`
   background-color: white;
-  position: -webkit-sticky;
   position: sticky;
+  overflow-y: hidden;
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
   top: 0;
 `;
 
@@ -30,10 +34,20 @@ export const uNotificationButton = css`
     width: 80px;
   };
 `;
+
 export const uNotificationColButton = css`
   ${uColmd2}
   align-self: center;
 `;
+
+export const uNotificationHide = css`
+  max-height: 0px
+`;
+
+export const uNotificationShow = css`
+  max-height: 500px
+`;
+
 export const uNotificationParagraph = css`
   font-size: 18px;
   text-align: left;

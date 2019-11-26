@@ -1,10 +1,14 @@
 import React from 'react';
-import {uNotification, uNotificationParagraph, uNotificationButton, uNotificationContainer, uNotificationColButton} from './styles';
+import {cx} from 'emotion/macro';
+import {uNotification, uNotificationParagraph, uNotificationButton, uNotificationContainer, uNotificationHide, uNotificationShow, uNotificationColButton} from './styles';
 import { uColorBlue } from '../../utils/styles';
 import { uColmd10 } from '../../utils/grid';
+
 function Appnotification() {
+  const [notification, setNotification] = React.useState(true);
+  const buttonClick = () => setNotification(false);
   return (
-    <div className={uNotification}>
+    <div className={cx(uNotification, notification ? uNotificationShow : uNotificationHide)}>
       <div className={uNotificationContainer}>
         <div className={uColmd10}>
           <p className={uNotificationParagraph}>
@@ -13,7 +17,7 @@ function Appnotification() {
           </p>
         </div>
         <div className={uNotificationColButton}>
-          <button className={uNotificationButton}>Got It</button>
+          <button className={uNotificationButton} onClick={buttonClick}>Got It</button>
         </div>
        </div>
     </div>
