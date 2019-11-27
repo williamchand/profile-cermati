@@ -121,7 +121,7 @@ export const uCardTitle = css`
 `;
 
 export const uCardTitleLeft = css`
-  font-size: 18px;
+  font-size: 22px;
   color: black;
 `;
 
