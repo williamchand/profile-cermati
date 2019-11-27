@@ -51,7 +51,7 @@ function Highlights() {
   ];
 
   const showCard = () => {
-    return recipeList.map(item => <Card image={item.image} title={item.title} description={item.description}/>);
+    return recipeList.map(item => <Card key={item.title} image={item.image} title={item.title} description={item.description}/>);
   };
 
   return (

@@ -12,11 +12,10 @@ function Appnewsletter() {
   const [show, setShow] = React.useState(false);
   const closeButton = () => {
     const date = new Date();
-    date.setTime(date.getTime() + (60 * 1000));
+    date.setTime(date.getTime() + (600 * 1000));
     setCookie('newsletter', true, { path: '/', expires: date });
     setShow(false);
   };
-  console.log(cookies.newsletter);
   React.useEffect(() => {
     if(scroll.y > windowSize.height/3 && !cookies.newsletter){
         setShow(true);
